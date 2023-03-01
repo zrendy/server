@@ -5,7 +5,6 @@ const getUserEventsController = async (req, res) => {
     var username = req.body.username
     const result = await getUserEvents(username);
     res.send(result)
-    //send result
 }
 
 module.exports = {getUserEventsController}
